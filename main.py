@@ -36,9 +36,56 @@ def victim():
 
     print("\nKnown for rich, secretive adn hated by Many..")
     print("\nCause of Death : @ Stab wound")
+
+def emily():
+    print(">>> Emily Harris \n")
+
+    print ("Aeg : 44")
+
+def james():
+    pass
+
+def sarah():
+    pass
+
+def michael():
+    pass
+
+
+def suspect():
+    print("\n--- SUSPECTS --- \n")
+
+    print("1. James Carter (butler)\n")
+    print("2. Sarah Blackwood \n")
+
+    print("3. Michael Stone  \n")
+
+    print("4. Emily Harris \n")
+    choice_sus = input("Select suspect to investigate (no.) : ")
+
+    if choice_sus == 1:
+        james()
+
+    elif choice_sus == 2:
+        sarah()
+    elif choice_sus == 3:
+        michael()
+
+    elif choice_sus == 4:
+        emily()
+
+
+    else:
+        print ("\n Error finding Suspect . Choose the proper number. ")
+        time.sleep(1s)
+        return suspect()
+
+
     
 
-
 setting()
+
+victim()
+suspect()
 
 
