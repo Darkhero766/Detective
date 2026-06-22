@@ -18,7 +18,7 @@ def menu():
     menu = int(input("\nChoose the no. to continue : "))
 
     if menu == 1:
-        setting()
+        victim()
     elif menu == 2:
         library()
     elif menu == 3:
@@ -45,7 +45,7 @@ def menu1():
     elif choice == 3:
         suspect()
     elif choice == 4:
-        pass
+        final()
 
     else :
         print("\nOption not found. Enter a proper number.. \n")
@@ -70,6 +70,7 @@ def setting():
     
     print("\nMurderer is still inside the Manor...")
     time.sleep(2)
+    menu()
 
 def final():
     print("\n--- Reveal the Culprit ---\n")
@@ -84,20 +85,25 @@ def final():
     if choice == 1:
         print("\nWrong person . Murderer escaped")
         print("\n Mission failed")
+        time.sleep(2)
         print("\n--- Game End -- ")
 
     elif choice == 2:
         print("\nFound it ")
+        time.sleep(2)
         print("\n How that bastard making calls when phone lines are cut\n")
+        time.sleep(2)
         print("\n---- Game finished ---")
 
     elif choice == 3:
         print("\n Wrong person")
+        time.sleep(2)
         print("\nKiller escaped\n")
+        time.sleep(2)
         print("--- Game end ---")
     elif choice == 4:
         print("\nWrong person")
-
+        time.sleep(2)
         print("\nKiller expscaped the mansion \n")
         time.sleep(2)
         print("--- Game End ---")
@@ -130,6 +136,16 @@ def victim():
 
     print("\nKnown for rich, secretive adn hated by Many..")
     print("\nCause of Death : @ Stab wound")
+
+    choose = str(input("\n return to menu (y/n) : "))
+    if choose == "y":
+        menu()
+    else :
+        print("\n Enter a proper answer ")
+        time.sleep(3)
+        victim()
+
+
 
 def emily():
     print("\n>>> Emily Harris \n")
@@ -223,7 +239,7 @@ def suspect():
 
 setting()
 
-victim()
-menu()
+
+
 
 
